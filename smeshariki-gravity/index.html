@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#19112e" />
+  <meta name="description" content="Интерактивная фан-страница по серии «Притяжение Земли»: Копатыч, Кар-Карыч, движение, дружба и маленькие победы." />
+  <title>Притяжение Земли — Смешарики | Интерактивная история</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900;1000&family=Rubik:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="progress" class="scroll-progress" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <a class="logo" href="#home" aria-label="На главную"><span class="logo-star">✦</span> СМЕШАРИКИ <small>фан-проект</small></a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="nav">☰ <span>Меню</span></button>
+    <nav id="nav" class="nav" aria-label="Основная навигация">
+      <a href="#about">История</a><a href="#heroes">Герои</a><a href="#ideas">Идеи</a><a href="#watch">Серия</a><a href="#notes">Мнения</a>
+    </nav>
+    <a class="header-cta" href="#watch"><span>▶</span> Смотреть</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="heroTitle">
+      <div class="hero-stars" id="heroStars" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-one" aria-hidden="true"></div><div class="hero-orbit orbit-two" aria-hidden="true"></div>
+      <div class="container hero-layout">
+        <div class="hero-copy" data-reveal>
+          <div class="eyebrow"><span class="dot"></span> ИНТЕРАКТИВНАЯ ИСТОРИЯ <span class="mini-star">✳</span></div>
+          <h1 id="heroTitle">ПРИТЯЖЕНИЕ <span>ЗЕМЛИ</span><span class="title-scribble">✦</span></h1>
+          <p class="hero-lead">Когда <b>Копатыч</b> и <b>Кар-Карыч</b> берутся за спорт, обычная тренировка превращается в историю о характере, дружбе и умении не сдаваться.</p>
+          <div class="hero-actions"><a class="btn btn-primary magnetic" href="#watch"><span>▶</span> Смотреть серию</a><a class="btn btn-ghost" href="#about">Погрузиться в историю <span>↘</span></a></div>
+          <div class="hero-small"><span class="pulse-ring">↘</span> Листай вниз — здесь всё оживает</div>
+        </div>
+        <div class="hero-visual" data-parallax="0.14" aria-label="Копатыч и Кар-Карыч занимаются спортом">
+          <div class="hero-visual-halo"></div>
+          <img src="assets/hero-duo.webp" alt="Копатыч и Кар-Карыч с гантелями на яркой спортивной площадке" fetchpriority="high" />
+          <span class="float-sticker sticker-one">ПОЕХАЛИ! ✨</span><span class="float-sticker sticker-two">+100 к настроению</span>
+          <span class="floating-dumbbell" aria-hidden="true">🏋️</span>
+        </div>
+      </div>
+      <div class="hero-bottom"><span>01 / 09</span><div class="scroll-track"><i></i></div><span>ДВИЖЕНИЕ — ЭТО ЖИЗНЬ</span></div>
+    </section>
+
+    <section class="section section-story torn-top" id="about">
+      <div class="container story-grid">
+        <div class="story-visual" data-reveal>
+          <div class="paper-frame tilted"><img src="assets/memory.webp" alt="Копатыч и Кар-Карыч отдыхают после тренировки" loading="lazy" /><span class="photo-caption">Из альбома приключений ♡</span></div>
+          <span class="drawn-arrow">↗</span><span class="doodle sun-doodle">☼</span>
+        </div>
+        <div class="story-text" data-reveal>
+          <span class="section-tag">01 / ЗНАКОМСТВО С ИСТОРИЕЙ</span>
+          <h2>Не просто <em>зарядка.</em><br />Целое приключение!</h2>
+          <p>В центре этой истории — два очень разных друга. Копатыч любит основательный подход, а Кар-Карыч умеет превратить любое дело в настоящее представление.</p>
+          <p>Спорт становится поводом поговорить о чём-то большем: <strong>почему мы начинаем, как справляемся с трудностями и что на самом деле делает нас сильнее.</strong></p>
+          <div class="quote-strip"><span>✦</span> Сила начинается не с рекорда, а с первого шага.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-heroes torn-top" id="heroes">
+      <div class="container">
+        <div class="section-heading centered" data-reveal><span class="section-tag">02 / ЗНАКОМЬСЯ</span><h2>Два героя.<br /><em>Одна команда.</em></h2><p>Они такие разные — и именно поэтому вместе интереснее.</p></div>
+        <div class="hero-cards">
+          <article class="character-card kopatych" data-reveal><div class="character-number">01</div><div class="character-image image-kopatych"><img src="assets/sports-duo.webp" alt="Копатыч с гантелями" loading="lazy" /></div><div class="character-content"><span class="pill">НАСТОЙЧИВОСТЬ</span><h3>КОПАТЫЧ</h3><p>Любит порядок, практичность и дело. Учит нас терпению: хорошие привычки растут постепенно, как урожай.</p><span class="character-sign">«Главное — не бросать начатое!»</span></div></article>
+          <article class="character-card karych" data-reveal><div class="character-number">02</div><div class="character-image image-karych"><img src="assets/hero-duo.webp" alt="Кар-Карыч с гантелью" loading="lazy" /></div><div class="character-content"><span class="pill">ВДОХНОВЕНИЕ</span><h3>КАР-КАРЫЧ</h3><p>Энергичный, артистичный и неунывающий. Напоминает: даже серьёзное дело можно делать с улыбкой.</p><span class="character-sign">«А что, если попробовать ещё раз?»</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-ideas torn-top" id="ideas">
+      <div class="container">
+        <div class="section-heading" data-reveal><span class="section-tag">03 / СКРЫТЫЙ СМЫСЛ</span><h2>О чём эта <em>история?</em></h2><p>За шутками и тренировками скрываются идеи, которые пригодятся каждому.</p></div>
+        <div class="ideas-grid">
+          <article class="idea-card" data-reveal><div class="idea-icon">♥</div><span>01</span><h3>Забота о себе</h3><p>Двигаться, отдыхать и слышать себя — важнее, чем гнаться за чужими результатами.</p><div class="idea-bottom">ПОЗАБОТЬСЯ О СЕБЕ ↗</div></article>
+          <article class="idea-card" data-reveal><div class="idea-icon">✦</div><span>02</span><h3>Маленькие шаги</h3><p>Необязательно быть чемпионом с первого дня. Регулярность важнее идеального старта.</p><div class="idea-bottom">НАЧАТЬ С МАЛОГО ↗</div></article>
+          <article class="idea-card" data-reveal><div class="idea-icon">✌</div><span>03</span><h3>Поддержка друзей</h3><p>Рядом с тем, кто верит в тебя, даже самая непростая задача становится легче.</p><div class="idea-bottom">БЫТЬ РЯДОМ ↗</div></article>
+          <article class="idea-card" data-reveal><div class="idea-icon">☯</div><span>04</span><h3>Баланс</h3><p>Смех, игра и отдых тоже нужны. Сильный человек умеет вовремя остановиться.</p><div class="idea-bottom">НАЙТИ ГАРМОНИЮ ↗</div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-journey torn-top" id="journey">
+      <div class="container">
+        <div class="journey-heading" data-reveal><div><span class="section-tag">04 / МАРШРУТ ПРИКЛЮЧЕНИЯ</span><h2>От «начну завтра»<br />до <em>«я смог!»</em></h2></div><p>Четыре состояния, знакомые каждому, кто хоть раз решал изменить привычки.</p></div>
+        <div class="journey-line"><article data-reveal><span class="journey-dot">1</span><h3>Идея</h3><p>Всё начинается с желания попробовать.</p></article><article data-reveal><span class="journey-dot">2</span><h3>Первый шаг</h3><p>Сложнее всего — просто начать.</p></article><article data-reveal><span class="journey-dot">3</span><h3>Испытание</h3><p>Не всё получается сразу. И это нормально.</p></article><article data-reveal><span class="journey-dot">4</span><h3>Открытие</h3><p>Удовольствие от пути — уже победа.</p></article></div>
+      </div>
+    </section>
+
+    <section class="section section-watch torn-top" id="watch">
+      <div class="container watch-grid">
+        <div class="watch-copy" data-reveal><span class="section-tag">05 / ВРЕМЯ МУЛЬТИКА</span><h2>А теперь —<br /><em>смотреть!</em></h2><p>Посмотри серию «Притяжение Земли», а затем возвращайся: ниже тебя ждут мини-игра и блокнот для впечатлений.</p><div class="watch-meta"><span>🎬 Смешарики</span><span>🍿 Устраивайся удобнее</span></div><a class="btn btn-primary" href="https://yandex.ru/video/preview/18131753518336642605?text=%D1%81%D0%BC%D0%B5%D1%88%D0%B0%D1%80%D0%B8%D0%BA%D0%B8%20%D0%BF%D1%80%D0%B8%D1%82%D1%8F%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B7%D0%B5%D0%BC%D0%BB%D0%B8&path=yandex_search&parent-reqid=1794218295759164-8041645295199000537-vx2xhxwgodvgbtzn-BAL&from_type=vast" target="_blank" rel="noopener noreferrer">▶ Открыть видео на Яндексе ↗</a></div>
+        <div class="retro-tv" data-reveal><div class="tv-antenna"></div><div class="tv-body"><div class="tv-screen"><img src="assets/tv-scene.webp" alt="Кадр с героями на экране ретро-телевизора" loading="lazy" /><a class="play-big" aria-label="Смотреть серию на Яндекс Видео" href="https://yandex.ru/video/preview/18131753518336642605" target="_blank" rel="noopener noreferrer">▶</a></div><div class="tv-knobs"><i></i><i></i></div></div><div class="tv-feet"><i></i><i></i></div><div class="tv-caption">Нажми ▶, чтобы открыть оригинальное видео</div></div>
+      </div>
+    </section>
+
+    <section class="section section-gallery torn-top" id="moments"><div class="container"><div class="section-heading centered" data-reveal><span class="section-tag">06 / АТМОСФЕРА</span><h2>Мир, в который<br /><em>хочется вернуться</em></h2></div><div class="gallery-grid"><figure class="gallery-big" data-reveal><img src="assets/sports-duo.webp" alt="Спортивная атмосфера приключения" loading="lazy" /><figcaption>Вместе веселее!</figcaption></figure><figure data-reveal><img src="assets/friends.webp" alt="Друзья из мира Смешариков" loading="lazy" /><figcaption>Дружба в каждом кадре</figcaption></figure><figure data-reveal><img src="assets/memory.webp" alt="Тёплый момент отдыха" loading="lazy" /><figcaption>Пауза тоже важна</figcaption></figure></div></div></section>
+
+    <section class="section section-interactive torn-top" id="play"><div class="container interactive-grid"><div class="interactive-copy" data-reveal><span class="section-tag">07 / ТВОЯ ОЧЕРЕДЬ</span><h2>Проверим<br /><em>настроение?</em></h2><p>Какую мысль из истории ты возьмёшь с собой? Выбери ответ — и получи маленькое послание.</p><div class="quiz-options" role="group" aria-label="Выбери идею"><button class="quiz-option" data-message="Да! Даже пять минут движения — уже хорошее начало. ✨">Я начну с малого <span>↗</span></button><button class="quiz-option" data-message="Супер! Вместе трудности становятся приключениями. 💜">Позову друга <span>↗</span></button><button class="quiz-option" data-message="Верно! Забота о себе — это и движение, и отдых. 🌿">Не забуду отдыхать <span>↗</span></button></div><div class="quiz-result" id="quizResult" role="status" aria-live="polite">Выбери вариант, чтобы увидеть ответ ✨</div></div><div class="challenge-card" data-reveal><div class="challenge-icon">⚡</div><span class="challenge-label">МИНИ-ЧЕЛЛЕНДЖ</span><h3>20 секунд<br />для себя</h3><p>Встань, потянись и разомни плечи. Маленькая пауза — уже движение!</p><div class="timer" id="timer" aria-live="polite">00:20</div><button class="btn btn-dark" id="timerButton">▶ Начать челлендж</button><button class="timer-reset" id="timerReset" hidden>Начать заново ↺</button></div></div></section>
+
+    <section class="section section-notes torn-top" id="notes"><div class="container"><div class="section-heading centered" data-reveal><span class="section-tag">08 / БЛОКНОТ ВПЕЧАТЛЕНИЙ</span><h2>А что думаешь <em>ты?</em></h2><p>Оставь свою мысль — она появится на этой странице в виде маленькой записки.</p></div><div class="notes-layout"><form class="notebook" id="noteForm" data-reveal><div class="notebook-rings" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><span class="notebook-label">МОЯ ЗАПИСКА ✎</span><label for="noteName">Как тебя зовут?</label><input id="noteName" maxlength="28" placeholder="Например, Смешарик" autocomplete="nickname" /><label for="noteText">Твои впечатления</label><textarea id="noteText" rows="5" maxlength="320" required placeholder="Мне понравилось, что..." aria-describedby="counter"></textarea><div class="note-form-bottom"><span id="counter">0 / 320</span><button class="btn btn-primary" type="submit">Прикрепить записку ↗</button></div><p class="privacy-hint">Записки сохраняются в этом браузере. Для общей ленты всех посетителей нужен сервер.</p></form><div class="notes-wall" data-reveal><div class="wall-title"><h3>СТЕНА ВПЕЧАТЛЕНИЙ</h3><span id="noteCount">0 записок</span></div><div id="notesList" class="notes-list" aria-live="polite"></div></div></div></div></section>
+
+    <section class="section section-finale torn-top" id="finale"><div class="finale-landscape"></div><div class="container finale-content" data-reveal><span class="section-tag">09 / ИСТОРИЯ ПРОДОЛЖАЕТСЯ</span><h2>Не обязательно<br />быть <em>самым сильным.</em><br />Важно — двигаться вперёд.</h2><p>Пусть каждый новый день будет поводом сделать маленький шаг к себе.</p><a href="#home" class="btn btn-light">Вернуться в начало ↑</a></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-content"><div><a class="logo" href="#home"><span class="logo-star">✦</span> СМЕШАРИКИ</a><p>Творческий неофициальный фан-проект по мотивам мультсериала. Персонажи и название принадлежат правообладателям.</p></div><div><span>ИССЛЕДУЙ</span><a href="#about">История</a><a href="#heroes">Персонажи</a><a href="#ideas">Главные идеи</a></div><div><span>УЧАСТВУЙ</span><a href="#watch">Смотреть</a><a href="#play">Мини-игра</a><a href="#notes">Оставить мнение</a></div><div class="footer-right">Сделано с ♡ и верой<br />в маленькие победы.<br /><small>© 2026 • Фан-концепт</small></div></div></footer>
+</body>
+</html>
